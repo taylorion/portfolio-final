@@ -97,7 +97,6 @@ main {
 
 .parallax {
     padding-top: calc((20rem - 3rem) / 2); /*min height - header size / 2*/
-    background-attachment: fixed;
     background-size: cover;
     min-height: 20rem;
 }
