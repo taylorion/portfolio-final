@@ -187,6 +187,10 @@ nav div a:hover {
     justify-content: space-between;
 }
 
+.parallax {
+  background-attachment: fixed;
+}
+
 .col-3 > img, .col-3 > div {
     margin: 0 auto;
     width:calc((100% / 3) - 2rem);
