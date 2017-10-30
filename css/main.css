@@ -135,19 +135,6 @@ main {
   background-color: rgba(208, 33, 44, 0);
 }
 
-.image-background:hover {
-  background-color: rgba(208, 33, 44, 1);
-  transition: .25s ease;
-}
-
-.hover-opacity:hover {
-  opacity: 0.5;
-}
-
-.hover-opacity {
-  opacity: 1.0;
-}
-
 .about-me-container {
   padding: 1rem;
 }
@@ -167,12 +154,6 @@ footer {
   text-align: center;
 }
 
-nav div a:hover {
-  border-radius: 5px;
-  border-color: #d0212c
-  color: #d0212c;
-
-}
 
 .selected a {
   color: #d0212c;
@@ -196,6 +177,12 @@ nav div a:hover {
     width:calc((100% / 3) - 2rem);
     max-width: 250px;
     max-height: 250px;
+}
+
+nav div a:hover {
+  border-radius: 5px;
+  border-color: #d0212c
+  color: #d0212c;
 }
 
 .col-3 img:nth-child(2) {
@@ -236,18 +223,41 @@ nav div a:hover {
   width:calc((100% / 1.5) - 2rem);
 }
 
+a {
+  text-decoration: none;
+  border: 0;
+}
+
+.image-background:hover {
+  background-color: rgba(208, 33, 44, 1);
+  transition: .25s ease;
+}
+
+.hover-opacity:hover {
+  opacity: 0.5;
+}
+
+
+.hover-opacity {
+  opacity: 1.0;
+}
+
 .social-media-icons div {
-  height: 50px;
-  width: 50px;
-  margin: 0 50px;
+  height: 25px;
+  width: 25px ;
+  margin: 0 2px;
   display: inline-block;
   background-size: contain;
   background-repeat: no-repeat;
 }
 
-a {
-  text-decoration: none;
-  border: 0;
+footer {
+  height: 25px;
+  width: 25px ;
+  margin: 0 2px;
+  display: inline-block;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 #behance {
