@@ -188,6 +188,13 @@ nav div a:hover {
     justify-content: space-between;
 }
 
+.parallax {
+    padding-top: calc((20rem - 3rem) / 2); /*min height - header size / 2*/
+    background-attachment: fixed;
+    background-size: cover;
+    min-height: 20rem;
+}
+
 .col-3 > img, .col-3 > div {
     margin: 0 auto;
     width:calc((100% / 3) - 2rem);
@@ -278,4 +285,3 @@ a {
 #twitter:hover {
   background-image: url(../images/icons/twitter-hover.svg);
 }
- 
