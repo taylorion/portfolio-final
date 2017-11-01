@@ -54,7 +54,7 @@ main {
 }
 
 #title {
-    background-image: url('../images/placeholder-square.jpg');
+    background-image: url('../images/wallpaper.jpg');
 }
 
 #about {
@@ -62,7 +62,7 @@ main {
 }
 
 #sec2 {
-    background-image: url('../images/placeholder-square.jpg');
+    background-image: url('../images/vertical.jpg');
 }
 
 #sec3 {
@@ -96,7 +96,7 @@ main {
 }
 
 .parallax {
-    padding-top: calc((20rem - 3rem) / 2); /*min height - header size / 2*/
+    padding-top: calc((20rem - 9rem) / 2); /*min height - header size / 2*/
     background-attachment: fixed;
     background-size: cover;
     min-height: 20rem;
@@ -132,21 +132,35 @@ main {
   height: 100%;
 }
 
-.image-background {
-  background-color: rgba(208, 33, 44, 0);
+.image-container {
+  position: relative;
 }
 
-.image-background:hover {
-  background-color: rgba(208, 33, 44, 1);
-  transition: .25s ease;
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.25s ease-in-out;
 }
 
-.hover-opacity:hover {
-  opacity: 0.5;
+.overlay:hover {
+  opacity: 1;
+  background-color: rgba(208, 33, 44, 0.75);
+  transition: 0.25s ease-in-out;
 }
 
-.hover-opacity {
-  opacity: 1.0;
+.overlay-text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .about-me-container {
@@ -179,81 +193,6 @@ nav div a:hover {
   color: #d0212c;
 }
 
-@media (min-width: 500px) {
-  .col-3 {
-    width: 100%;
-    padding:0 1rem;
-    margin: 5rem auto;
-    display: flex;
-    justify-content: space-between;
-}
-
-.parallax {
-    padding-top: calc((20rem - 3rem) / 2); /*min height - header size / 2*/
-    background-attachment: fixed;
-    background-size: cover;
-    min-height: 20rem;
-}
-
-.col-3 > img, .col-3 > div {
-    margin: 0 auto;
-    width:calc((100% / 3) - 2rem);
-    max-width: 250px;
-    max-height: 250px;
-}
-
-.col-3 img:nth-child(2) {
-}
-
-.about-me-container {
-  padding: 0;
-}
-
-.about {
-  display: inline-block;
-  width: 30%;
-  padding-top: 0;
-}
-
-.picture {
-  display: inline-block;
-  width: 30%;
-  padding-right: 1rem;
-}
-
-.col-2 {
-  width: 100%;
-  padding:0 1rem;
-  margin: 5rem auto;
-  display: flex;
-  justify-content: space-between;
-}
-
-.col-2 img {
-    margin: 0 auto;
-    width:calc((100% / 2.5) - 2rem);
-    max-height: 300px;
-}
-
-.col-2 div {
-  margin: 0 auto;
-  width:calc((100% / 1.5) - 2rem);
-}
-
-.social-media-icons div {
-  height: 50px;
-  width: 50px;
-  margin: 0 50px;
-  display: inline-block;
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
-a {
-  text-decoration: none;
-  border: 0;
-}
-
 #behance {
   background-image: url(../images/icons/behance.svg);
 }
@@ -284,4 +223,88 @@ a {
 
 #twitter:hover {
   background-image: url(../images/icons/twitter-hover.svg);
+}
+
+a {
+  text-decoration: none;
+  border: 0;
+}
+
+.social-media-icons div {
+    height: 30px;
+    width: 30px;
+    margin: 0 20px;
+    display: inline-block;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+@media (min-width: 500px) {
+  .col-3 {
+    width: 100%;
+    padding:0 1rem;
+    margin: 5rem auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.parallax {
+    padding-top: calc((20rem - 3rem) / 2); /*min height - header size / 2*/
+    background-attachment: fixed;
+    background-size: cover;
+    min-height: 20rem;
+}
+
+.col-3 > img, .col-3 > div {
+    margin: 0 auto;
+    width:calc((100% / 3) - 2rem);
+    max-width: 250px;
+    max-height: 250px;
+}
+
+.col-3 img:nth-child(2) {
+}
+
+.about-me-container {
+  padding: 0;
+}
+
+.about-me {
+  display: inline-block;
+  width: 100%;
+  padding: 5rem;
+}
+
+.picture {
+  display: inline-block;
+  width: 30%;
+  padding-right: 1rem;
+}
+
+.col-2 {
+  width: 100%;
+  padding:0 1rem;
+  margin: 5rem auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.col-2 img {
+    margin: 0 auto;
+    width:calc((100% / 2.5) - 2rem);
+    max-height: 300px;
+}
+
+.col-2 div {
+  margin: 0 auto;
+  width:calc((100% / 1.5) - 2rem);
+}
+
+.social-media-icons div {
+    height: 50px;
+    width: 50px;
+    margin: 0 30px;
+    display: inline-block;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
