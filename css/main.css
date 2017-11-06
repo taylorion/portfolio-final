@@ -53,8 +53,16 @@ main {
     width:100%;
 }
 
+#title-about {
+    background-image: url('../images/cover-3.jpg');
+}
+
+#title-ndd {
+    background-image: url('../images/texture.jpg');
+}
+
 #title {
-    background-image: url('../images/wallpaper.jpg');
+  background-image: url('../images/placeholder-square.jpg');
 }
 
 #about {
@@ -73,22 +81,6 @@ main {
   background-image: url('../images/placeholder-square.jpg');
 }
 
-.button {
-  padding-bottom: 5rem;
-}
-
-.btn {
-  width: 75px;
-  color: #fff;
-  background-color: #c22026;
-  padding: 1rem 0;
-  display: block;
-  text-align: center;
-  border: none;
-  margin: auto;
-
-}
-
 .parallax,
 .content {
     width: 100%;
@@ -96,8 +88,7 @@ main {
 }
 
 .parallax {
-    padding-top: calc((20rem - 9rem) / 2); /*min height - header size / 2*/
-    background-attachment: fixed;
+    padding-top: calc((20rem - 5rem) / 2); /*min height - header size / 2*/
     background-size: cover;
     min-height: 20rem;
 }
@@ -163,8 +154,8 @@ main {
   transform: translate(-50%, -50%);
 }
 
-.about-me-container {
-  padding: 1rem;
+.about-me {
+  padding: 0rem 1.5;
 }
 
 .about {
@@ -239,6 +230,22 @@ a {
     background-repeat: no-repeat;
 }
 
+.about-project {
+  padding: 2rem 1.5rem;
+}
+
+.project-images {
+  align-items: center;
+  display: inline-block;
+  width: 50%;
+}
+
+.about-content {
+  margin: 0% 7.5%;
+  padding: 1.5rem 0;
+}
+
+
 @media (min-width: 500px) {
   .col-3 {
     width: 100%;
@@ -272,7 +279,7 @@ a {
 .about-me {
   display: inline-block;
   width: 100%;
-  padding: 5rem;
+  padding: 0rem 5rem;
 }
 
 .picture {
@@ -307,4 +314,8 @@ a {
     display: inline-block;
     background-size: contain;
     background-repeat: no-repeat;
+}
+
+.about-content {
+  margin: 0% 5%;
 }
