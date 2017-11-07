@@ -14,15 +14,14 @@ html {
 header {
     text-align: center;
     width: 100%;
-    position: fixed;
     top: 0;
     z-index: 10;
     background-color: #000;
 }
 
 header img {
-    margin: 5px 0;
-    height: 4rem;
+    margin: 10px 0;
+    height: 5rem;
     width: 70%;
 }
 
@@ -31,7 +30,6 @@ header #navbar {
 }
 
 nav {
-    display: flex;
     margin: auto;
     width: 320px;
     padding-bottom: 10px;
@@ -48,7 +46,7 @@ nav div a {
 }
 
 main {
-    margin-top: 6.5rem;
+    margin-top: 1rem;
     position: relative;
     width:100%;
 }
@@ -70,7 +68,7 @@ main {
 }
 
 #sec2 {
-    background-image: url('../images/vertical.jpg');
+    background-image: url('../images/cg-cover.jpg');
 }
 
 #sec3 {
@@ -82,13 +80,14 @@ main {
 }
 
 .parallax,
-.content {
+.content-home {
     width: 100%;
     text-align: center;
 }
 
 .parallax {
     padding-top: calc((20rem - 5rem) / 2); /*min height - header size / 2*/
+    /*background-attachment: fixed; THIS AFFECTS MOBILE PARALLAX*/
     background-size: cover;
     min-height: 20rem;
 }
@@ -104,8 +103,8 @@ main {
     color: #fff;
 }
 
-.content {
-    padding: 3rem 0;
+.content-home {
+    padding: 2rem 0;
 }
 
 .content h1 {
@@ -245,14 +244,24 @@ a {
   padding: 1.5rem 0;
 }
 
+.album {
+  width: 80%;
+  padding-left: 0 1rem;
+  margin:2rem auto;
+  display: flex;
+}
 
 @media (min-width: 500px) {
   .col-3 {
     width: 100%;
-    padding:0 1rem;
-    margin: 5rem auto;
+    padding: 0 1rem;
+    margin: 2rem auto;
     display: flex;
     justify-content: space-between;
+}
+
+h1 {
+  padding-top: 1rem;
 }
 
 .parallax {
@@ -265,11 +274,8 @@ a {
 .col-3 > img, .col-3 > div {
     margin: 0 auto;
     width:calc((100% / 3) - 2rem);
-    max-width: 250px;
-    max-height: 250px;
-}
-
-.col-3 img:nth-child(2) {
+    max-width: 350px;
+    max-height: 350px;
 }
 
 .about-me-container {
@@ -318,4 +324,11 @@ a {
 
 .about-content {
   margin: 0% 5%;
+  font-size: 120%;
+  line-height: 1.2;
+}
+
+nav {
+  display: flex;
+  width: 100%;
 }
