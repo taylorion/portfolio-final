@@ -62,7 +62,8 @@ main {
 }
 
 #title {
-  background-image: url('../images/animation-16.gif');
+  background-image: url('../images/animation-32.gif');
+  background-position: center;
 }
 
 #about {
