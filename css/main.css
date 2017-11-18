@@ -62,7 +62,7 @@ main {
 }
 
 #title {
-  background-image: url('../images/animation-32.gif');
+  background-image: url('../images/animation-16.gif');
   background-position: center;
 }
 
@@ -81,7 +81,8 @@ main {
 }
 
 #sec4 {
-  background-image: url('../images/placeholder-square.jpg');
+  background-image: url('../images/sunrise-cover.jpg');
+  background-position: center;
 }
 
 .parallax,
