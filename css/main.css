@@ -62,7 +62,7 @@ main {
 }
 
 #title {
-  background-image: url('../images/animation-16.gif');
+  background-image: url('../images/banner.jpg');
   background-position: center;
 }
 
@@ -93,7 +93,7 @@ main {
 
 .parallax {
     padding-top: calc((20rem - 5rem) / 2); /*min height - header size / 2*/
-    background-attachment: fixed;
+    /*background-attachment: fixed; THIS AFFECTS MOBILE PARALLAX*/
     background-size: cover;
     min-height: 20rem;
 }
