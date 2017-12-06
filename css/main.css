@@ -53,7 +53,7 @@ main {
 }
 
 #title-about {
-    background-image: url('../images/cover-3.jpg');
+    background-image: url('../images/about-banner.jpg');
 }
 
 #title-ndd {
@@ -93,7 +93,7 @@ main {
 
 .parallax {
     padding-top: calc((20rem - 5rem) / 2); /*min height - header size / 2*/
-    /*background-attachment: fixed; THIS AFFECTS MOBILE PARALLAX*/
+    background-attachment: fixed;
     background-size: cover;
     min-height: 20rem;
 }
