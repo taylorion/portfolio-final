@@ -93,7 +93,7 @@ main {
 
 .parallax {
     padding-top: calc((20rem - 5rem) / 2); /*min height - header size / 2*/
-    background-attachment: fixed;
+    /*background-attachment: fixed; THIS AFFECTS MOBILE PARALLAX*/
     background-size: cover;
     min-height: 20rem;
 }
@@ -133,6 +133,7 @@ main {
 }
 
 .overlay {
+  z-index: 1000;
   position: absolute;
   top: 0;
   bottom: 0;
@@ -144,10 +145,18 @@ main {
   transition: 0.25s ease-in-out;
 }
 
-.overlay:hover {
+.image-container:hover .overlay {
   opacity: 1;
-  background-color: rgba(208, 33, 44, 0.75);
+  background-color: rgba(0, 0, 0, .2);
   transition: 0.25s ease-in-out;
+}
+
+.blur img {
+  transition: 0.25s ease-in-out;
+}
+
+.blur:hover img {
+  filter:blur(3.5px);
 }
 
 .overlay-text {
