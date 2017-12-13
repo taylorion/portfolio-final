@@ -56,6 +56,10 @@ main {
     background-image: url('../images/about-banner.jpg');
 }
 
+#title-contact {
+  background-image: url('../images/placeholder-square.jpg');
+}
+
 #title-ndd {
     background-image: url('../images/texture.jpg');
     background-position: center;
@@ -64,6 +68,10 @@ main {
 #title {
   background-image: url('../images/banner.jpg');
   background-position: center;
+}
+
+#title-olympics {
+  background-image: url('../images/olympic-banner.jpg');
 }
 
 #about {
