@@ -54,7 +54,7 @@ caption {
 
 hr {
   border: 0;
-  border-top: 2px solid #000;
+  border-top: 2px solid #fff;
   height: 0;
 }
 
@@ -166,7 +166,7 @@ fieldset,
 pre,
 table,
 caption {
-  margin: 0 0 1.3rem;
+  /*margin: 0 0 1.3rem;*/
 }
 
 .tenamega {
@@ -471,7 +471,7 @@ legend {
   pre,
   table,
   caption {
-    margin: 0 0 1.4rem;
+    /*margin: 0 0 1.4rem;*/
   }
 
   .tenamega {
@@ -798,7 +798,7 @@ legend {
   pre,
   table,
   caption {
-    margin: 0 0 1.5rem;
+    /*margin: 0 0 1.5rem;*/
   }
 
   .tenamega {
@@ -1103,7 +1103,7 @@ legend {
 
   html {
     font-size: 130%;
-    line-height: 1.5;
+    /*line-height: 1.5;*/
   }
 
   h1,
@@ -1125,7 +1125,7 @@ legend {
   pre,
   table,
   caption {
-    margin: 0 0 1.5rem;
+    /*margin: 0 0 1.5rem;*/
   }
 
   .tenamega {

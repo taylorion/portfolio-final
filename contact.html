@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/grids.css">
-    <link rel="stylesheet" href="type.css">
+    <link rel="stylesheet" href="css/type.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300" rel="stylesheet">
   </head>
   <body>
     <header id="header">
@@ -24,62 +25,55 @@
       </div>
 
       <div class="about-me">
-        <p class="about-content">Yo, use this to end me jokes, money, and on the odd occasion: work related questions!</p>
+        <p class="about-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
       </div>
     </div>
 
-    <div class="max-length">
-      <form>
-        <div>
-          <label>Name</label>
-          <input>
-        </div>
-        <div>
-          <label>Email</label>
-          <input>
-        </div>
-        <div>
-          <label>Subject</label>
-          <input>
-        </div>
-        <div>
-          <label>What's up?</label>
-          <textarea></textarea>
-        </div>
-        <div>
-          <button>Send message</button>
-        </div>
+    <div class="container">
+      <form class="fill-content" action="/action_page.php">
+
+        <label for="fname">Name</label>
+        <input type="text" id="name" name="name" placeholder="Your name...">
+
+        <label for="lname">Subject</label>
+        <input type="text" id="subject" name="subject" placeholder="Subject...">
+
+        <label for="lname">E-Mail</label>
+        <input type="text" id="e-mail" name="e-mail" placeholder="Your E-Mail...">
+
+        <label for="subject">Message</label>
+        <textarea id="message" name="message" placeholder="Write something..." style="height:200px"></textarea>
+
+        <input type="submit" value="Submit"><br><br>
+
       </form>
     </div>
 
+    <br>
+    <hr>
+    <br>
 
-
-      <hr>
+    <footer>
+      <div class="social-media-icons">
+        <a href="https://www.behance.net/taylorion92050">
+          <div id="behance"></div>
+        </a>
+        <a href="mailto:contact@oriontaylor.ca">
+          <div id="email"></div>
+        </a>
+        <a href="https://www.instagram.com/oriontaylordesign/">
+          <div id="instagram"></div>
+        </a>
+        <a href="https://mobile.twitter.com/taylorion">
+          <div id="twitter"></div>
+        </a>
+        <br>
+        <br>
+      </div>
+      <p>All content is © 2017  ORION TAYLOR</p>
       <br>
 
-      <footer>
-        <div class="social-media-icons">
-          <a href="https://www.behance.net/taylorion92050">
-            <div id="behance"></div>
-          </a>
-          <a href="mailto:contact@oriontaylor.ca">
-            <div id="email"></div>
-          </a>
-          <a href="https://www.instagram.com/oriontaylordesign/">
-            <div id="instagram"></div>
-          </a>
-          <a href="https://mobile.twitter.com/taylorion">
-            <div id="twitter"></div>
-          </a>
-
-          <br>
-          <br>
-
-          All content is © 2017 ORION TAYLOR</footer>
-
-          <br>
-        </div>
-      </footer>
+    </footer>
 
     </main>
   </body>
