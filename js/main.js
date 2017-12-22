@@ -1,6 +1,5 @@
 var parallaxitems = document.querySelectorAll('.parallax-img');
-
-window.addEventListener('scroll', function(){
+var runParallax=function() {
   [].forEach.call(parallaxitems, function (item, i) {
     var diffParentTop = Math.floor(item.parentNode.getBoundingClientRect().top);
     var diffParentBottom = Math.floor(item.parentNode.getBoundingClientRect().bottom);
@@ -12,4 +11,10 @@ window.addEventListener('scroll', function(){
       item.style.marginTop = '-' + diff + 'px';
     }
   });
+};
+
+window.addEventListener('scroll', function(){
+  runParallax();
 });
+
+runParallax();
