@@ -148,15 +148,6 @@ main {
 .content h1 {
   text-transform: uppercase;
 }
-/*Delete*/
-.col-3 > img, .col-3 > div {
-.project img{
-
-}
-  width: 80%;
-  margin: 1rem auto;
-  display: block;
-}
 
 .col-4 > img, .col-4 > div {
   width: 100%;
@@ -315,6 +306,7 @@ input[type=text], select, textarea {
 
 /* Style the submit button with a specific background color etc */
 button[type=submit] {
+  font-size: 100%;
   background-color: #fff;
   color: #d0212c;
   padding: 12px 20px;
@@ -322,7 +314,6 @@ button[type=submit] {
   cursor: pointer;
 }
 
-/* When moving the mouse over the submit button, add a darker green color */
 button[type=submit]:hover {
   color: #fff;
   background-color: #d0212c;
