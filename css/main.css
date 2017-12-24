@@ -109,7 +109,7 @@ main {
   /*padding-top: calc((20rem - 5rem) / 2); /*min height - header size / 2*/
   /*background-attachment: fixed; THIS AFFECTS MOBILE PARALLAX*/
   background-size: cover;
-  height: 20rem;
+  height: 22rem;
   position: relative;
   overflow: hidden;
 
@@ -260,6 +260,7 @@ footer {
 a {
   text-decoration: none;
   border: 0;
+  color: #55d7ff
 }
 
 .social-media-icons div {
