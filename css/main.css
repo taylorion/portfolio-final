@@ -109,7 +109,7 @@ main {
   /*padding-top: calc((20rem - 5rem) / 2); /*min height - header size / 2*/
   /*background-attachment: fixed; THIS AFFECTS MOBILE PARALLAX*/
   background-size: cover;
-  height: 22rem;
+  height: 20rem;
   position: relative;
   overflow: hidden;
 
@@ -354,6 +354,11 @@ button[type=submit]:hover {
 }
 
 .project {
+  width:calc((100% / 4) - 1rem);
+  margin:0.5rem;
+}
+
+.project-2 {
   width:calc((100% / 2) - 1rem);
   margin:0.5rem;
 }
@@ -431,7 +436,6 @@ nav {
   padding:0 1rem;
   margin: 5rem auto;
   display: flex;
-  justify-content: space-between;
 }
 
 .col-2 img {
