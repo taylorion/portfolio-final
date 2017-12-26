@@ -340,9 +340,20 @@ button[type=submit]:hover {
   box-sizing: border-box;
   width: calc(100% - 2rem);
 }
+
 .project {
   background-color:#000;
   margin: 1rem auto;
+}
+
+.col-2 {
+  width: 100%;
+  padding: 0 1rem;
+}
+
+.col-1 {
+  width: 100%;
+  padding: .5rem;
 }
 
 @media (min-width: 38em) {
@@ -351,6 +362,11 @@ button[type=submit]:hover {
   padding: 0 1rem;
   margin: 2rem auto;
   display:flex;
+}
+
+.col-1 {
+  width: 100%;
+  padding: 0;
 }
 
 .project {
@@ -371,10 +387,15 @@ button[type=submit]:hover {
 }
 
 #projects {
-  flex-wrap:wrap;
+  flex-wrap: wrap;
   margin: 1rem auto;
   width: 100%;
-  display: flex;
+}
+
+#case-study {
+  flex-wrap: wrap;
+  margin: auto auto;
+  width: 85%;
 }
 
 .col-4 {
@@ -440,13 +461,13 @@ nav {
 
 .col-2 img {
   margin: 0 auto;
-  width:calc((100% / 2.5) - 2rem);
-  max-height: 300px;
+  width: calc((100% / 1) - 0.5rem);
+  display: flex;
 }
 
 .col-2 div {
-  margin: 0 auto;
-  width:calc((100% / 1.5) - 2rem);
+    margin: 1rem 1rem;
+    width: calc((100% / 2) - 2rem);
 }
 
 .social-media-icons div {
