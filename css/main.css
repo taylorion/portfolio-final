@@ -380,10 +380,10 @@ button[type=submit]:hover {
 }
 
 #projects-featured {
-  flex-wrap:wrap;
-  margin: 0rem auto 1rem 0;
+  flex-wrap: wrap;
+  margin: 1rem auto;
   width: 100%;
-  display: flex;
+  max-width: 1440px;
 }
 
 #projects {
@@ -396,6 +396,7 @@ button[type=submit]:hover {
   flex-wrap: wrap;
   margin: auto auto;
   width: 85%;
+  max-width: 1440px;
 }
 
 .col-4 {
