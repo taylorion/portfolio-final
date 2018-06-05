@@ -1,5 +1,4 @@
 
-
 * {
   margin: 0;
   padding: 0;
@@ -142,7 +141,7 @@ main {
 }
 
 .content-home {
-  padding: 2rem 0;
+  padding: 1rem 0rem 0rem 0rem;
 }
 
 .content h1 {
@@ -364,24 +363,28 @@ button[type=submit]:hover {
   display:flex;
 }
 
+.parallax h1 {
+  font-size: 6rem;
+}
+
 .col-1 {
   width: 100%;
   padding: 0;
 }
 
 .project {
-  width:calc((100% / 4) - 1rem);
-  margin:0.5rem;
+  width: calc((100% / 4) - 1rem);
+  margin: 0.5rem;
 }
 
 .project-2 {
-  width:calc((100% / 2) - 1rem);
-  margin:0.5rem;
+  width: calc((100% / 2) - 1rem);
+  margin: 0.5rem;
 }
 
 #projects-featured {
   flex-wrap: wrap;
-  margin: 1rem auto;
+  margin: 0.5rem auto 1rem;
   width: 100%;
   max-width: 1440px;
 }
@@ -417,13 +420,13 @@ nav {
 
 .col-3 > img, .col-3 > div {
   margin: 0 auto;
-  width:calc((100% / 3) - 2rem);
+  width: calc((100% / 3) - 2rem);
   max-width: 350px;
   max-height: 350px;
 }
 
 .col-4 > img, .col-4 > div {
-  width:calc((100% / 4) - 1rem);
+  width: calc((100% / 4) - 1rem);
   max-width: 350px;
   max-height: 350px;
 }
@@ -496,11 +499,13 @@ nav {
 }
 
 @media (min-width: 60em) {
-
+  h1 {
+    font-size: 8rem;
+  }
   }
 
-
-
 @media (min-width: 90em) {
-
+  h1 {
+    font-size: 6.5rem;
+  }
 }
